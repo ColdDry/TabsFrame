@@ -1,27 +1,50 @@
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.tabFrame{
+.tabFrame {
     height: 95%;
     width: 100%;
     top: 5%;
     position: fixed;
 }
-.tabTitle{
+
+.tabTitle {
     height: 5%;
     width: 10%;
-    left: 1%;
-    position: absolute;
-    border: 1px dashed silver; 
+    border: 1px dashed silver;
+    margin-left: 1px;
+    display: inline-block;
 }
-.tabContent{
+
+.selected {
+    color: black;
+    background-color: white;   
+    border: 1px solid silver;
+}
+
+.unselected {
+    color: white;
+    background-color: silver;
+}
+
+.tabContent {
     height: 95%;
     width: 100%;
-    top: 5%;
+    top: 6%;
     position: absolute;
-    border: 1px dashed silver;     
+    border: 1px solid black;
+}
+
+.addTab {
+    height: 50px;
+    width: 50px;
+    right: 1%;
+    top:1%;
+    position: absolute;
+    border: 1px dashed lightgreen;
 }

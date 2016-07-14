@@ -10,14 +10,16 @@
 </head>
 
 <body ng-controller="myCtrl as ctrl">
-    <div class="tabFrame" ng-repeat="option in ctrl.tab_options">
-        <div class="tabTitle" ng-style="ctrl.setStyle(option)">
+    <div class="tabFrame" >
+        <div class="tabTitle" ng-class="option.style" ng-click="ctrl.selectTab(option.id)" ng-repeat="option in ctrl.tab_options">
             {{option.title}}
         </div>
-        <div class="tabContent" ng-show="option.selected">
+        <div  class="tabContent" ng-show="option.selected" ng-repeat="option in ctrl.tab_options">
             {{option.content}}
         </div>
     </div>
+
+    <button class="addTab" ng-click="ctrl.addTab()">Add</button>
 
 </body>
 
