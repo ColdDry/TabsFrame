@@ -6,15 +6,16 @@
     <meta charset="UTF-8">
     <link href="public/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="public/app.js"></script>
 </head>
 
 <body ng-controller="myCtrl as ctrl">
-    <div class="tabFrame">
-        <div class="tabTitle">
-
+    <div class="tabFrame" ng-repeat="option in ctrl.tab_options">
+        <div class="tabTitle" ng-style="ctrl.setStyle(option)">
+            {{option.title}}
         </div>
-        <div class="tabContent">
-
+        <div class="tabContent" ng-show="option.selected">
+            {{option.content}}
         </div>
     </div>
 
