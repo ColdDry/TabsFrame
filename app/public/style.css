@@ -1,0 +1,27 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tabFrame{
+    height: 95%;
+    width: 100%;
+    top: 5%;
+    position: fixed;
+}
+.tabTitle{
+    height: 5%;
+    width: 10%;
+    left: 1%;
+    position: absolute;
+    border: 1px dashed silver; 
+}
+.tabContent{
+    height: 95%;
+    width: 100%;
+    top: 5%;
+    position: absolute;
+    border: 1px dashed silver;     
+}
